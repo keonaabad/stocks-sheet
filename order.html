@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="data-table">
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Symbol</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <th>Splunk</th>
+                <th>SPLK</th>
+                <th>137.55</th>
+            </tr>
+            <tr>
+                <th>Microsoft</th>
+                <th>MSFT</th>
+                <th>232.04</th>
+            </tr>
+            <tr>
+                <th>Oracle</th>
+                <th>ORCL</th>
+                <th>67.08</th>
+            </tr>
+            <tr>
+                <th>Snowflake</th>
+                <th>SNOW</th>
+                <th>235.8</th>
+            </tr>
+            <tr>
+                <th>Teradata</th>
+                <th>TDC</th>
+                <th>44.98</th>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+    <div class="stock-order-form">
+        <h1 class="order-form-title">Stocks Order Form</h1>
+        <form action="/boughtstock" method="post">
+            <select name="stocks" id="stocks">
+                <option value="SPLK">SPLK</option>
+                <option value="MSFT">MSFT</option>
+                <option value="ORCL">ORCL</option>
+                <option value="SNOW">SNOW</option>
+                <option value="TDC">TDC</option>
+            </select> <br>
+            <label for="shares">Amount of shares to purchase</label>
+            <input type="number" id="shares" name="shares" min="1" max="1000"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
